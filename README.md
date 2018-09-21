@@ -1,2 +1,0 @@
-# mkworldsolutions
-www.mkworldsolutions.com
