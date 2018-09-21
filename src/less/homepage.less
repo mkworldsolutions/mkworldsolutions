@@ -26,12 +26,98 @@
     }
 }
 
-.btn-learnmore {}
-
 // images
 .homepage-intro {
     &.bg {
         background: top / cover no-repeat url('/images/homepage_intro.png');
+    }
+}
+
+// *** services ***
+.homepage-services-wrapper {
+    background-color: @color-services-bg;
+}
+
+.homepage-services-heading {
+    font-size: 36px;
+    letter-spacing: -0.2px;
+    color: @color-services-text;
+    padding: 105px 0 0 100px;
+}
+
+.homepage-services-sub-heading {
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    color: @color-services-text;
+    margin: 8px 0 0 100px;
+}
+
+.homepage-services {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.homepage-services-format {
+    display: inline-block;
+}
+
+.homepage-service {
+    float: left;
+    width: 141px;
+    &:nth-child(1) {
+        .homepage-service-icon-wrapper {
+            background-color: #d2cbd8;
+        }
+    }
+    &:nth-child(2) {
+        .homepage-service-icon-wrapper {
+            background-color: #d2cbd8;
+        }
+    }
+    &:nth-child(3) {
+        .homepage-service-icon-wrapper {
+            background-color: #c1dfea;
+        }
+    }
+    &:nth-child(4) {
+        .homepage-service-icon-wrapper {
+            background-color: #a89dbe;
+        }
+    }
+    &:nth-child(5) {
+        .homepage-service-icon-wrapper {
+            background-color: #d0c0cc;
+        }
+    }
+    &:nth-child(6) {
+        .homepage-service-icon-wrapper {
+            background-color: #b7879a;
+        }
+    }
+    .homepage-service-icon-wrapper {
+        width: 125px;
+        height: 125px;
+        border-radius: 125px;
+        margin: 0 auto;
+    }
+    .homepage-service-detail {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: -0.1px;
+        color: #2a6292;
+        margin-top: 26px;
+        text-align: center;
+    }
+}
+
+.homepage-services-actions {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    button {
+        margin: 80px 0 106px 0;
     }
 }
 
