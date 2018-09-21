@@ -1,0 +1,38 @@
+// *** intro ***
+.homepage-intro-wrapper {
+    display: table;
+    width: 100%;
+    background-color: @color-intro-bg;
+}
+
+.homepage-intro {
+    display: table-cell;
+    width: 50%;
+    color: @color-intro-text;
+    &:not(.bg) {
+        padding: 80px 0 99px 98px;
+    }
+    .homepage-intro-title {
+        font-size: 36px;
+        letter-spacing: -0.2px;
+    }
+    .homepage-intro-content {
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        margin-top: 24px;
+    }
+    .homepage-intro-actions {
+        margin-top: 72px;
+    }
+}
+
+.btn-learnmore {}
+
+// images
+.homepage-intro {
+    &.bg {
+        background: top / cover no-repeat url('/images/homepage_intro.png');
+    }
+}
+
+// *** another component ***
