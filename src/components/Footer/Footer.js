@@ -8,7 +8,7 @@ class Footer extends Component {
         this.state = {
             data: [],
             isLoaded: false
-        }
+        };
     }
 
     componentDidMount = () => {
@@ -20,7 +20,7 @@ class Footer extends Component {
         this.setState({
             data: footerJSON,
             isLoaded: Object.keys(footerJSON).length > 0
-        })
+        });
     }
 
     render() {
@@ -41,22 +41,20 @@ class Footer extends Component {
                                         {section.name}
                                     </a>
                                 </div>
-                                <div className='footer-divider'></div>
+                                <div className='footer-divider' />
                                 <div className='footer-section-sub'>
                                     <ul className='footer-section-list'>
                                         {
-                                            section.subs.map((subitem) => {
-                                                return (
-                                                    <li className='footer-section-listitem' key={subitem.name}>
-                                                        {subitem.name}
-                                                    </li>
-                                                )
-                                            })
+                                            section.subs.map(subitem => (
+                                                <li className='footer-section-listitem' key={subitem.name}>
+                                                    {subitem.name}
+                                                </li>
+                                            ))
                                         }
                                     </ul>
                                 </div>
                             </div>
-                        )
+                        );
                     })
                 }
             </div>
