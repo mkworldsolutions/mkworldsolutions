@@ -35,7 +35,7 @@ class Menu extends Component {
             <div className='header-padder clear'>
                 <div className='header-wrapper'>
                     <svg width="322px" height="34px" viewBox="0 0 322 34">
-                        <g id="MK-Website" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" fontFamily="AppleGothic" font-size="36" font-weight="normal" letter-spacing="-0.2411765">
+                        <g id="MK-Website" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" fontFamily="AppleGothic" fontSize="36" fontWeight="normal" letterSpacing="-0.2411765">
                             <g id="Home-Screen" transform="translate(-25.000000, -27.000000)">
                                 <g id="Header">
                                     <g id="Logo" transform="translate(24.000000, 24.000000)">
@@ -54,7 +54,7 @@ class Menu extends Component {
                     <ul className='menu clear'>
                         {
                             data.links.map(link => (
-                                <li className='menu-item'>
+                                <li className='menu-item' key={link.name}>
                                     <a href={link.url} className='menu-link'>
                                         {link.name}
                                     </a>
