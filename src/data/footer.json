@@ -1,0 +1,80 @@
+{
+    "services": {
+        "name": "Services",
+        "url": "/services.html",
+        "subs": [
+            {
+                "name": "Web Design"
+            },
+            {
+                "name": "Responsive Design"
+            },
+            {
+                "name": "Application Design"
+            },
+            {
+                "name": "Social Media Marketing"
+            },
+            {
+                "name": "SEO Optimization"
+            },
+            {
+                "name": "Graphic Needs"
+            }
+        ]
+    },
+    "processes": {
+        "name": "Processes",
+        "url": "/process.html",
+        "subs": [
+            {
+                "name": "UX Design Process"
+            },
+            {
+                "name": "Development Process"
+            }
+        ]
+    },
+    "Team": {
+        "name": "Team",
+        "url": "/team.html",
+        "subs": [
+            {
+                "name": "Our Vision"
+            },
+            {
+                "name": "Our Team"
+            }
+        ]
+    },
+    "Contact": {
+        "name": "Contact",
+        "url": "/contact.html",
+        "subs": [
+            {
+                "name": "Phone:"
+            },
+            {
+                "name": "Email:"
+            },
+            {
+                "name": "Social Media"
+            }
+        ]
+    },
+    "Our Work": {
+        "name": "Our Work",
+        "url": "/ourwork.html",
+        "subs": [
+            {
+                "name": "Responsive Web"
+            },
+            {
+                "name": "Advertisements"
+            },
+            {
+                "name": "Business Marketing"
+            }
+        ]
+    }
+}
