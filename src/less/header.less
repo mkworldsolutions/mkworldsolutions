@@ -1,0 +1,42 @@
+.header-container {
+    line-height: 80px;
+    height: 80px;
+    padding: 0 24px;
+    background-color: @color-header-bg;
+}
+
+// alignment
+.header-padder {
+    &>* {
+        float: left;
+    }
+    .header-wrapper {
+        width: 30%;
+    }
+    .menu-wrapper {
+        text-align: right;
+        width: 70%;
+    }
+}
+
+// header
+.header-wrapper {}
+
+// menu
+.menu {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .menu-item {
+        float: left;
+    }
+}
+
+.menu-link {
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    padding: 0 16px;
+    text-decoration: none;
+    color: @color-menu-link;
+}
