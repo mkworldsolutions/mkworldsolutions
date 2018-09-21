@@ -4,11 +4,11 @@ import { render } from 'react-dom';
 import { Menu } from '../components';
 
 (() => {
-    const menu = document.getElementById('menu-container');
-    if (menu !== null) {
+    const headerContainer = document.getElementById('header-container');
+    if (headerContainer !== null) {
         render(
             <Menu />,
-            menu
+            headerContainer
         );
     }
 })();
