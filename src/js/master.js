@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import { Menu } from '../components';
+import { Menu, Footer } from '../components';
+
 
 (() => {
     const headerContainer = document.getElementById('header-container');
@@ -9,6 +10,14 @@ import { Menu } from '../components';
         render(
             <Menu />,
             headerContainer
+        );
+    }
+
+    const footerContainer = document.getElementById('footer-container');
+    if (footerContainer !== null) {
+        render(
+            <Footer />,
+            footerContainer
         );
     }
 })();

@@ -54,6 +54,10 @@ module.exports = function (grunt) {
             }
         },
         watch: {
+            data: {
+                files: ['src/data/*.json'],
+                tasks: ['copy:dev']
+            },
             less: {
                 files: ['src/less/*.less'],
                 tasks: ['less:dev']
