@@ -30,35 +30,67 @@ class Footer extends Component {
         }
 
         return (
-            <div className='footer-wrapper clear'>
-                {
-                    Object.keys(data).map((sectionKey) => {
-                        const section = data[sectionKey];
-                        return (
-                            <div className='footer-section' key={section.name}>
-                                <div className='footer-section-spacer'>
-                                    <div className='footer-heading'>
-                                        <a href={section.url} className='footer-heading-link'>
-                                            {section.name}
-                                        </a>
-                                    </div>
-                                    <div className='footer-divider' />
-                                    <div className='footer-section-sub'>
-                                        <ul className='footer-section-list'>
-                                            {
-                                                section.subs.map(subitem => (
-                                                    <li className='footer-section-listitem' key={subitem.name}>
-                                                        {subitem.name}
-                                                    </li>
-                                                ))
-                                            }
-                                        </ul>
+            <div className='footer-wrapper'>
+                <div className='footer-row'>
+                    {
+                        Object.keys(data).slice(0, 3).map((sectionKey) => {
+                            const section = data[sectionKey];
+                            return (
+                                <div className='footer-section' key={section.name}>
+                                    <div className='footer-section-spacer'>
+                                        <div className='footer-heading'>
+                                            <a href={section.url} className='footer-heading-link'>
+                                                {section.name}
+                                            </a>
+                                        </div>
+                                        <div className='footer-divider' />
+                                        <div className='footer-section-sub'>
+                                            <ul className='footer-section-list'>
+                                                {
+                                                    section.subs.map(subitem => (
+                                                        <li className='footer-section-listitem' key={subitem.name}>
+                                                            {subitem.name}
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        );
-                    })
-                }
+                            );
+                        })
+                    }
+                </div>
+                <div className='footer-row'>
+                    {
+                        Object.keys(data).slice(3).map((sectionKey) => {
+                            const section = data[sectionKey];
+                            return (
+                                <div className='footer-section' key={section.name}>
+                                    <div className='footer-section-spacer'>
+                                        <div className='footer-heading'>
+                                            <a href={section.url} className='footer-heading-link'>
+                                                {section.name}
+                                            </a>
+                                        </div>
+                                        <div className='footer-divider' />
+                                        <div className='footer-section-sub'>
+                                            <ul className='footer-section-list'>
+                                                {
+                                                    section.subs.map(subitem => (
+                                                        <li className='footer-section-listitem' key={subitem.name}>
+                                                            {subitem.name}
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
+                </div>
             </div>
         );
     }
