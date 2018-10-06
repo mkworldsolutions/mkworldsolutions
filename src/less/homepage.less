@@ -251,9 +251,94 @@
 }
 
 // *** another component ***
-
-@media(max-width: @screen-lg){
-    .homepage-intro:not(.bg){
+@media(max-width: @screen-lg) {
+    .homepage-intro:not(.bg) {
         padding: 80px 0 99px 48px;
+    } // services
+    .homepage-services-heading {
+        padding: 100px 0 0 0;
+        text-align: center;
+    }
+    .homepage-services-sub-heading {
+        margin: 8px 0 0 0;
+        text-align: center;
+    }
+    .homepage-service {
+        width: 33.33%;
+    }
+    .homepage-client-carousel-item {
+        display: block;
+        width: 100%;
+        margin: 14px 0;
+    }
+    .homepage-services-actions,
+    .homepage-client-actions {
+        text-align: center;
+    } // client
+    .homepage-client-heading-wrapper,
+    .homepage-quote-heading-wrapper {
+        padding: 100px 0 0 0;
+        text-align: center;
+    } // quote
+    .homepage-quote-form {
+        width: 90%;
+        .signup-row {
+            .mc-field-group {
+                float: none;
+                width: 50%;
+                &:nth-child(1) {
+                    .field-spacer {
+                        padding-right: 0;
+                    }
+                }
+                &:nth-child(2) {
+                    .field-spacer {
+                        margin-top: 45px;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: @screen-sm) {
+    .homepage-intro {
+        display: block;
+        width: 100%;
+        &.bg {
+            height: 50vh;
+        }
+        &:not(.bg) {
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    .homepage-services {
+        margin-top: 24px;
+    }
+    .homepage-service {
+        width: 100%;
+        margin: 24px 0;
+    }
+    .homepage-service-actions {
+        padding: 5px;
+    }
+    .homepage-client-carousel-item {
+        &:nth-of-type(1) .homepage-client-image,
+        &:nth-of-type(2) .homepage-client-image,
+        &:nth-of-type(3) .homepage-client-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+        }
+    }
+    .homepage-quote-form {
+        .signup-row {
+            .mc-field-group {
+                float: none;
+                width: 100%
+            }
+        }
     }
 }
