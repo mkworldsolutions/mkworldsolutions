@@ -121,4 +121,61 @@
     }
 }
 
+// *** Some Clients ***
+.homepage-clients-wrapper {
+    background-color: #d1e0ec;
+}
+
+.homepage-client-heading-wrapper {
+    padding: 105px 0 0 98px;
+    color: #0a1622;
+    .homepage-client-heading {
+        font-size: 36px;
+        letter-spacing: -0.2px;
+    }
+    .homepage-client-subheading {
+        font-size: 20px;
+        letter-spacing: -0.1px;
+    }
+}
+
+.homepage-client-carousel {
+    display: table;
+    max-width: 1100px;
+    margin: 72px auto 0;
+}
+
+.homepage-client-carousel-item {
+    display: table-cell;
+    width: 33.333%;
+    vertical-align: middle;
+    &:nth-of-type(1),
+    &:nth-of-type(3) {
+        .homepage-client-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            border: 1px solid #6b779e;
+            box-shadow: 0 0 3px 1px #6b779e;
+        }
+    }
+    &:nth-of-type(2) {
+        .homepage-client-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            border: 1px solid #6b779e;
+            box-shadow: 0 0 3px 1px #6b779e;
+        }
+    }
+    .homepage-client-image {
+        margin: 0 auto;
+    }
+}
+
+.homepage-client-actions {
+    text-align: right;
+    padding: 100px 0 71px 0;
+}
+
 // *** another component ***
