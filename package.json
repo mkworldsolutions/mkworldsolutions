@@ -1,6 +1,6 @@
 {
   "name": "mkworldsolutions",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,9 @@
     "browserify": "^16.2.2",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
     "grunt": "^1.0.3",
     "grunt-browserify": "^5.3.0",
     "grunt-contrib-copy": "^1.0.0",
