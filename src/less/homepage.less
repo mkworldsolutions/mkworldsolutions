@@ -42,14 +42,14 @@
     font-size: 36px;
     letter-spacing: -0.2px;
     color: @color-services-text;
-    padding: 105px 0 0 100px;
+    padding: 100px 0 0 98px;
 }
 
 .homepage-services-sub-heading {
     font-size: 20px;
     letter-spacing: -0.1px;
     color: @color-services-text;
-    margin: 8px 0 0 100px;
+    margin: 8px 0 0 98px;
 }
 
 .homepage-services {
@@ -127,7 +127,7 @@
 }
 
 .homepage-client-heading-wrapper {
-    padding: 105px 0 0 98px;
+    padding: 100px 0 0 98px;
     color: #0a1622;
     .homepage-client-heading {
         font-size: 36px;
@@ -176,6 +176,78 @@
 .homepage-client-actions {
     text-align: right;
     padding: 100px 0 71px 0;
+}
+
+// *** quote section ***
+.homepage-quote-wrapper {
+    background-color: #e4e6ed;
+}
+
+.homepage-quote-heading-wrapper {
+    padding: 100px 0 0 98px;
+    .homepage-quote-heading {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        color: #2a6292;
+    }
+    .homepage-quote-subheading {
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        color: #25282a;
+        margin-top: 16px;
+    }
+}
+
+.homepage-quote-form {
+    max-width: 900px;
+    margin: 80px auto 0;
+    .signup-row {
+        .mc-field-group {
+            float: left;
+            width: 50%;
+            &:nth-child(1) {
+                .field-spacer {
+                    padding-right: 10px;
+                }
+            }
+            &:nth-child(2) {
+                .field-spacer {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .label-signup {
+        display: block;
+        font-size: 12px;
+        line-height: 16px;
+        color: #2c3f5b;
+    }
+    .textbox-signup {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(37, 40, 42, 0.87);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #758294;
+        background: transparent;
+        &:placeholder {
+            color: #758294;
+        }
+    }
+    .field-group-desc {
+        margin-top: 45px;
+    }
+}
+
+.homepage-quote-action {
+    text-align: right;
+    margin-top: 38px;
+    padding-bottom: 60px;
 }
 
 // *** another component ***
