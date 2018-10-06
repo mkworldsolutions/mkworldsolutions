@@ -93,7 +93,7 @@
         left: -50%;
         height: 100vh;
         background-color: @color-header-bg;
-        opacity: .9;
+        opacity: .95;
         box-shadow: 1px 0 0 1px @color-header-bg;
         z-index: @z-index-menu;
         transition: left .5s;
@@ -105,6 +105,22 @@
         .menu-item {
             text-align: left;
             width: 100%;
+        }
+    }
+}
+
+@media(max-width: @screen-sm) {
+    .header-wrapper {
+        svg {
+            height: 20px;
+            width: 100%;
+        }
+    }
+    .header-padder .menu-wrapper {
+        width: 100%;
+        left: -100%;
+        &.open {
+            left: 0;
         }
     }
 }
