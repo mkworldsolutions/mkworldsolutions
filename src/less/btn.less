@@ -13,6 +13,23 @@
     }
 }
 
+// menu
+.btn-sm-menu-toogle,
+.btn-close-sm-menu {
+    height: @height-header-mini;
+    line-height: @height-header-mini;
+    background-color: @color-header-bg;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    svg {
+        display: block;
+        fill: #FFFFFF;
+        height: 40px;
+    }
+}
+
 // homepage
 .btn-learnmore {
     width: 75%;
@@ -38,4 +55,10 @@
     font-size: 20px;
     letter-spacing: -0.1px;
     width: 150px;
+}
+
+@media(max-width: @screen-lg) {
+    .btn-learnmore {
+        font-size: 24px;
+    }
 }
