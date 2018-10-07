@@ -16,35 +16,22 @@
         font-size: 36px;
         letter-spacing: -0.2px;
         animation: intro 3s;
-        .keyframeIntro();
     }
     .homepage-intro-content {
         font-size: 20px;
         letter-spacing: -0.1px;
         margin-top: 24px;
         animation: intro 3s;
-        .keyframeIntro();
     }
     .homepage-intro-actions {
         margin-top: 72px;
     }
 }
 
-.keyframeIntro() {
-    @keyframes intro {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-}
-
 // images
 .homepage-intro {
     &.bg {
-        background: top / cover no-repeat url('/images/homepage_intro.png');
+        background: 0 20% / cover no-repeat url('/images/homepage_intro.png');
     }
 }
 
@@ -72,67 +59,44 @@
     margin: 0 auto;
     margin-top: 120px;
     text-align: center;
-    opacity: 0;
+    opacity: .5;
     .homepage-service-icon-wrapper {
         backface-visibility: hidden;
     }
     &.open {
         opacity: 1;
         animation: showService 3s;
-        .keyframeShowService();
         .homepage-service {
             &:nth-child(1) {
                 .homepage-service-icon-wrapper {
-                    animation: spin 1s;
+                    animation: iconAnimation 1s;
                 }
             }
             &:nth-child(2) {
                 .homepage-service-icon-wrapper {
-                    animation: spin 1s .5s;
+                    animation: iconAnimation 1s .5s;
                 }
             }
             &:nth-child(3) {
                 .homepage-service-icon-wrapper {
-                    animation: spin 1s 1s;
+                    animation: iconAnimation 1s 1s;
                 }
             }
             &:nth-child(4) {
                 .homepage-service-icon-wrapper {
-                    animation: spin 1s 1.5s;
+                    animation: iconAnimation 1s 1.5s;
                 }
             }
             &:nth-child(5) {
                 .homepage-service-icon-wrapper {
-                    animation: spin 1s 2s;
+                    animation: iconAnimation 1s 2s;
                 }
             }
             &:nth-child(6) {
                 .homepage-service-icon-wrapper {
-                    animation: spin 1s 2.5s;
+                    animation: iconAnimation 1s 2.5s;
                 }
             }
-        }
-    }
-}
-
-.keyframeShowService {
-    @keyframes showService {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-}
-
-.keyframeSpin {
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
         }
     }
 }
@@ -246,20 +210,6 @@
     }
 }
 
-.keyframeBump {
-    @keyframes bump {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.2);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-}
-
 .homepage-client-carousel-item {
     display: table-cell;
     width: 33.333%;
@@ -299,6 +249,8 @@
 }
 
 .homepage-client-actions {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: right;
     padding: 100px 0 71px 0;
 }
@@ -376,9 +328,67 @@
 }
 
 // *** another component ***
+// key frames
+.keyframeIntro {
+    @keyframes intro {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.keyframeShowService {
+    @keyframes showService {
+        0% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.keyframeSpin {
+    @keyframes iconAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.keyframeBump {
+    @keyframes bump {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+// media
+@media(max-width: @screen-xlg) {
+    .homepage-quote-form {
+        max-width: 700px;
+    }
+}
+
 @media(max-width: @screen-lg) {
     .homepage-intro:not(.bg) {
         padding: 80px 0 99px 48px;
+    }
+    .homepage-intro.bg {
+        background: top/ cover no-repeat url('/images/homepage_intro.png');
     } // services
     .homepage-services-heading {
         padding: 100px 0 0 0;
@@ -388,8 +398,12 @@
         margin: 8px 0 0 0;
         text-align: center;
     }
+    .homepage-services {
+        margin-top: 60px;
+    }
     .homepage-service {
         width: 33.33%;
+        margin-top: 30px;
     }
     .homepage-services-actions,
     .homepage-client-actions {
@@ -415,7 +429,7 @@
         .signup-row {
             .mc-field-group {
                 float: none;
-                width: 50%;
+                width: 100%;
                 &:nth-child(1) {
                     .field-spacer {
                         padding-right: 0;
@@ -445,11 +459,11 @@
         }
     }
     .homepage-services {
-        margin-top: 24px;
+        margin-top: 30px;
     }
     .homepage-service {
         width: 100%;
-        margin: 24px 0;
+        margin: 30px 0;
     }
     .homepage-service-actions {
         padding: 5px;
