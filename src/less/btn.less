@@ -1,7 +1,8 @@
+@height-btn: 66px;
 .btn {
-    height: 66px;
-    line-height: 66px;
-    border-radius: 66px;
+    height: @height-btn;
+    line-height: @height-btn;
+    border-radius: @height-btn;
     color: @color-text-btn;
     background-color: @color-bg-btn;
     text-align: center;
@@ -35,6 +36,19 @@
     width: 75%;
     font-size: 36px;
     letter-spacing: -0.2px;
+    animation: learnmore 2s;
+    .keyframeLearnMore();
+}
+
+.keyframeLearnMore() {
+    @keyframes learnmore {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 .btn-servicequote {
