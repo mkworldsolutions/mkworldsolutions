@@ -97,8 +97,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('prod', [
         'browserify',
-        'uglify',
         'clean:prod',
+        'uglify',
         'copy:prod',
         'less:prod'
     ]);
