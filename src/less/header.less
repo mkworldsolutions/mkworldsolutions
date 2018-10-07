@@ -1,16 +1,20 @@
 @header-height: 80px;
 @height-header-mini: 50px;
 .header-container {
+    position: fixed;
+    width: 100%;
     line-height: @header-height;
     height: @header-height;
     padding: 0 24px;
     background-color: @color-header-bg;
+    z-index: @z-index-menu;
 }
 
 .sm-header-actions {
     display: none;
     position: absolute;
     left: 10px;
+    z-index: @z-index-menu;
 }
 
 .sm-menu-actions {
@@ -26,7 +30,9 @@
         float: left;
     }
     .header-wrapper {
+        position: relative;
         width: 30%;
+        z-index: 5;
     }
     .menu-wrapper {
         text-align: right;
@@ -38,6 +44,11 @@
 .header-wrapper {
     height: @header-height;
     line-height: @header-height;
+    svg {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 // menu
@@ -63,8 +74,16 @@
     color: @color-menu-link;
 }
 
+// temp fix me later - need own less file with global @header-height
+.content-container {
+    padding-top: @header-height;
+}
+
 @media(max-width: @screen-lg) {
-    // header height
+    // temp fix me later - need own less file with global @header-height
+    .content-container {
+        padding-top: @height-header-mini;
+    } // header height
     .header-container,
     .header-wrapper {
         height: @height-header-mini;
@@ -87,6 +106,9 @@
     }
     .header-wrapper {
         text-align: center;
+        svg {
+            margin-top: 10px;
+        }
     } // menu
     .menu-wrapper {
         position: fixed;
@@ -102,6 +124,7 @@
         }
     }
     .menu {
+        margin-top: 50px;
         .menu-item {
             text-align: left;
             width: 100%;
@@ -114,6 +137,7 @@
         svg {
             height: 20px;
             width: 100%;
+            margin-top: 20px;
         }
     }
     .header-padder .menu-wrapper {
