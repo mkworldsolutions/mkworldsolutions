@@ -4,3 +4,19 @@
     content: '';
     clear: both;
 }
+
+.content-max-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media(min-width: @screen-xlg) {
+    .content-max-container {
+        &>* {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+}
