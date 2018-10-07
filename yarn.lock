@@ -4383,6 +4383,10 @@ schedule@^0.5.0:
   dependencies:
     object-assign "^4.1.1"
 
+scroll-callback@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/scroll-callback/-/scroll-callback-0.1.2.tgz#fdaf3f6a248966770baa20dc04aa0a7f5708a76a"
+
 "semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
