@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "grunt prod",
-    "build:dev": "grunt dev"
+    "build:dev": "grunt dev",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",

@@ -4,6 +4,8 @@ import { callbackAtElementSurface } from 'scroll-callback';
 
 import { Menu, Footer } from '../components';
 
+/*
+// to do - add a second scroll event for client carousel once simply callback is fixed
 function bumpHomepageClient(el) {
     el.classList.add('bump');
 }
@@ -15,6 +17,7 @@ function addCarouselEvent() {
     }
     window.removeEventListener('scroll', addCarouselEvent);
 }
+*/
 
 function showHomepageService(el) {
     el.classList.add('open');
