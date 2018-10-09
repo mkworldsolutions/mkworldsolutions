@@ -106,7 +106,7 @@ ReactWrapper {
     "unmount": [Function],
   },
   Symbol(enzyme.__root__): ReactWrapper {
-    Symbol(enzyme.__unrendered__): <Footer />,
+    Symbol(enzyme.__unrendered__): <Menu />,
     Symbol(enzyme.__renderer__): Object {
       "batchedUpdates": [Function],
       "getNode": [Function],
@@ -117,7 +117,7 @@ ReactWrapper {
     },
     Symbol(enzyme.__root__): [Circular],
     Symbol(enzyme.__node__): Object {
-      "instance": Footer {
+      "instance": Menu {
         "_reactInternalFiber": FiberNode {
           "_debugID": 50,
           "_debugIsCurrentlyTiming": false,
@@ -369,6 +369,7 @@ ReactWrapper {
           "memoizedState": Object {
             "data": Array [],
             "isLoaded": false,
+            "menuOpen": false,
           },
           "mode": 0,
           "nextEffect": null,
@@ -616,13 +617,15 @@ ReactWrapper {
         "_reactInternalInstance": Object {},
         "componentDidMount": [Function],
         "context": Object {},
-        "handleFooterData": [Function],
+        "handleMenuData": [Function],
         "props": Object {},
         "refs": Object {},
         "state": Object {
           "data": Array [],
           "isLoaded": false,
+          "menuOpen": false,
         },
+        "toggleMenu": [Function],
         "updater": Object {
           "enqueueForceUpdate": [Function],
           "enqueueReplaceState": [Function],
@@ -639,7 +642,7 @@ ReactWrapper {
     },
     Symbol(enzyme.__nodes__): Array [
       Object {
-        "instance": Footer {
+        "instance": Menu {
           "_reactInternalFiber": FiberNode {
             "_debugID": 50,
             "_debugIsCurrentlyTiming": false,
@@ -891,6 +894,7 @@ ReactWrapper {
             "memoizedState": Object {
               "data": Array [],
               "isLoaded": false,
+              "menuOpen": false,
             },
             "mode": 0,
             "nextEffect": null,
@@ -1138,13 +1142,15 @@ ReactWrapper {
           "_reactInternalInstance": Object {},
           "componentDidMount": [Function],
           "context": Object {},
-          "handleFooterData": [Function],
+          "handleMenuData": [Function],
           "props": Object {},
           "refs": Object {},
           "state": Object {
             "data": Array [],
             "isLoaded": false,
+            "menuOpen": false,
           },
+          "toggleMenu": [Function],
           "updater": Object {
             "enqueueForceUpdate": [Function],
             "enqueueReplaceState": [Function],
@@ -1179,7 +1185,7 @@ ReactWrapper {
     },
   },
   Symbol(enzyme.__node__): Object {
-    "instance": Footer {
+    "instance": Menu {
       "_reactInternalFiber": FiberNode {
         "_debugID": 50,
         "_debugIsCurrentlyTiming": false,
@@ -1431,6 +1437,7 @@ ReactWrapper {
         "memoizedState": Object {
           "data": Array [],
           "isLoaded": false,
+          "menuOpen": false,
         },
         "mode": 0,
         "nextEffect": null,
@@ -1678,13 +1685,15 @@ ReactWrapper {
       "_reactInternalInstance": Object {},
       "componentDidMount": [Function],
       "context": Object {},
-      "handleFooterData": [Function],
+      "handleMenuData": [Function],
       "props": Object {},
       "refs": Object {},
       "state": Object {
         "data": Array [],
         "isLoaded": false,
+        "menuOpen": false,
       },
+      "toggleMenu": [Function],
       "updater": Object {
         "enqueueForceUpdate": [Function],
         "enqueueReplaceState": [Function],
@@ -1701,7 +1710,7 @@ ReactWrapper {
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
-      "instance": Footer {
+      "instance": Menu {
         "_reactInternalFiber": FiberNode {
           "_debugID": 50,
           "_debugIsCurrentlyTiming": false,
@@ -1953,6 +1962,7 @@ ReactWrapper {
           "memoizedState": Object {
             "data": Array [],
             "isLoaded": false,
+            "menuOpen": false,
           },
           "mode": 0,
           "nextEffect": null,
@@ -2200,13 +2210,15 @@ ReactWrapper {
         "_reactInternalInstance": Object {},
         "componentDidMount": [Function],
         "context": Object {},
-        "handleFooterData": [Function],
+        "handleMenuData": [Function],
         "props": Object {},
         "refs": Object {},
         "state": Object {
           "data": Array [],
           "isLoaded": false,
+          "menuOpen": false,
         },
+        "toggleMenu": [Function],
         "updater": Object {
           "enqueueForceUpdate": [Function],
           "enqueueReplaceState": [Function],
@@ -2224,7 +2236,7 @@ ReactWrapper {
   ],
   Symbol(enzyme.__rootNodes__): Array [
     Object {
-      "instance": Footer {
+      "instance": Menu {
         "_reactInternalFiber": FiberNode {
           "_debugID": 50,
           "_debugIsCurrentlyTiming": false,
@@ -2476,6 +2488,7 @@ ReactWrapper {
           "memoizedState": Object {
             "data": Array [],
             "isLoaded": false,
+            "menuOpen": false,
           },
           "mode": 0,
           "nextEffect": null,
@@ -2723,13 +2736,15 @@ ReactWrapper {
         "_reactInternalInstance": Object {},
         "componentDidMount": [Function],
         "context": Object {},
-        "handleFooterData": [Function],
+        "handleMenuData": [Function],
         "props": Object {},
         "refs": Object {},
         "state": Object {
           "data": Array [],
           "isLoaded": false,
+          "menuOpen": false,
         },
+        "toggleMenu": [Function],
         "updater": Object {
           "enqueueForceUpdate": [Function],
           "enqueueReplaceState": [Function],
@@ -2769,7 +2784,7 @@ exports[`Footer component Shallow Render Renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): ShallowWrapper {
     Symbol(enzyme.__root__): [Circular],
-    Symbol(enzyme.__unrendered__): <Footer />,
+    Symbol(enzyme.__unrendered__): <Menu />,
     Symbol(enzyme.__renderer__): Object {
       "batchedUpdates": [Function],
       "getNode": [Function],
