@@ -50,6 +50,7 @@
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-uglify": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.5.2"
   }
 }
