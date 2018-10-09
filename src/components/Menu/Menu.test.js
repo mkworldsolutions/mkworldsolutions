@@ -1,28 +1,27 @@
 import React from 'react';
 import { mount, shallow, render } from 'enzyme';
+import { Menu } from '.';
 
-import { Footer } from '.';
-
-const footerInitSnap = render(<Footer />);
-const footerMountSnap = mount(<Footer />);
-const footerShallowSnap = shallow(<Footer />);
+const menuInitSnap = render(<Menu />);
+const menuMountSnap = mount(<Menu />);
+const menuShallowSnap = shallow(<Menu />);
 
 describe('Footer component', () => {
     describe('Initial Render', () => {
         it('Renders correctly', () => {
-            expect(footerInitSnap.find(Footer)).toMatchSnapshot();
+            expect(menuInitSnap.find(Menu)).toMatchSnapshot();
         });
     });
 
     describe('Mount Render', () => {
         it('Renders correctly', () => {
-            expect(footerMountSnap.find(Footer)).toMatchSnapshot();
+            expect(menuMountSnap.find(Menu)).toMatchSnapshot();
         });
     });
 
     describe('Shallow Render', () => {
         it('Renders correctly', () => {
-            expect(footerShallowSnap.find(Footer)).toMatchSnapshot();
+            expect(menuShallowSnap.find(Menu)).toMatchSnapshot();
         });
     });
 });
