@@ -50,21 +50,7 @@ class Menu extends Component {
                 </div>
                 <div className='header-wrapper'>
                     <a href='/'>
-                        <svg width='322px' height='34px' viewBox='0 0 322 34'>
-                            <g id='MK-Website' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd' fontFamily='AppleGothic' fontSize='36' fontWeight='normal' letterSpacing='-0.2411765'>
-                                <g id='Home-Screen' transform='translate(-25.000000, -27.000000)'>
-                                    <g id='Header'>
-                                        <g id='Logo' transform='translate(24.000000, 24.000000)'>
-                                            <text id='MK|World-Solutions-Copy'>
-                                                <tspan x='0' y='32' fill='#E8ECF3'>MK</tspan>
-                                                <tspan x='55.461647' y='32' fill='#4884B7'>|</tspan>
-                                                <tspan x='73.2204705' y='32' fill='#E8ECF3'>World Solutions</tspan>
-                                            </text>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
+                        <img src='images/logo.png' alt='MK World Solutions' className='header-logo-img' />
                     </a>
                 </div>
                 <div className={`menu-wrapper${menuOpen ? ' open' : ''}`}>

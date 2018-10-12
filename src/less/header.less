@@ -44,9 +44,9 @@
 .header-wrapper {
     height: @header-height;
     line-height: @header-height;
-    svg {
+    .header-logo-img {
         display: block;
-        width: 100%;
+        height: 34px;
         margin-top: 20px;
     }
 }
@@ -106,7 +106,11 @@
     }
     .header-wrapper {
         text-align: center;
-        svg {
+        a {
+            display: inline-block;
+            height: @height-header-mini;
+        }
+        .header-logo-img {
             margin-top: 10px;
         }
     } // menu
@@ -134,15 +138,14 @@
 
 @media(max-width: @screen-sm) {
     .header-wrapper {
-        svg {
+        .header-logo-img {
             height: 20px;
-            width: 100%;
-            margin-top: 20px;
+            margin-top: 15px;
         }
     }
     .header-padder .menu-wrapper {
         width: 100%;
-        left: -100%;
+        left: -101%;
         &.open {
             left: 0;
         }
