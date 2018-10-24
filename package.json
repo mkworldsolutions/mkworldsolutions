@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "grunt prod",
-    "build:dev": "grunt dev",
+    "build": "cross-env NODE_ENV=production grunt prod",
+    "build:dev": "cross-env NODE_ENV=development grunt dev",
     "lint": "eslint src",
     "test": "jest",
     "test:dev": "jest --watch"
@@ -39,6 +39,7 @@
     "babel-preset-react": "^6.24.1",
     "babelify": "^10.0.0",
     "browserify": "^16.2.2",
+    "cross-env": "^5.2.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "eslint": "^5.6.0",
