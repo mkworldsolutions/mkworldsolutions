@@ -7,8 +7,6 @@
     "build": "yarn clean && cross-env NODE_ENV=production webpack --config webpack.prod.js",
     "build:dev": "yarn clean && cross-env NODE_ENV=development webpack --config webpack.dev.js && webpack-dev-server --config webpack.dev.js",
     "clean": "node cleandist.js",
-    "oldbuild": "grunt prod",
-    "oldbuild:dev": "grunt dev",
     "lint": "eslint src",
     "test": "jest",
     "test:dev": "jest --watch"
