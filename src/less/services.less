@@ -1,0 +1,41 @@
+.homepage-intro {
+    position: relative;
+}
+
+.homepage-intro-icon {
+    float: left;
+    width: 25%;
+}
+
+.intro-icon-container {
+    position: absolute;
+    min-height: 300px;
+    top: 50px;
+}
+
+.intro-icon-wrapper {
+    position: absolute;
+    &:nth-child(1) {
+        background: -35px 20% / cover no-repeat url('/images/service_intro1.png');
+        border-radius: 208px;
+        left: 0;
+        height: 208px;
+        width: 208px;
+    }
+    &:nth-child(2) {
+        background: -50px 20% / cover no-repeat url('/images/service_intro2.png');
+        border-radius: 148px;
+        left: 150px;
+        top: 20px;
+        height: 148px;
+        width: 148px;
+    }
+    &:nth-child(3) {
+        background: 0 20% / cover no-repeat url('/images/service_intro3.png');
+        border-radius: 148px;
+        left: 80px;
+        top: 130px;
+        height: 148px;
+        width: 148px;
+    }
+}
