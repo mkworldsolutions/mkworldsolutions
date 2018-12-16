@@ -271,17 +271,11 @@
 }
 
 // media
-@media(max-width: @screen-xlg) {
-    .homepage-quote-form {
-        max-width: 700px;
-    }
-}
-
 @media(max-width: @screen-lg) {
-    .homepage-intro:not(.bg) {
+    .intro-wrapper:not(.bg) {
         padding: 80px 0 99px 48px;
     }
-    .homepage-intro.bg {
+    .intro-wrapper.bg {
         background: top/ cover no-repeat url('/images/homepage_intro.png');
     } // services
     .homepage-services-heading {
@@ -303,8 +297,7 @@
     .homepage-client-actions {
         text-align: center;
     } // client
-    .homepage-client-heading-wrapper,
-    .homepage-quote-heading-wrapper {
+    .homepage-client-heading-wrapper {
         padding: 100px 0 0 0;
         text-align: center;
     }
@@ -317,31 +310,11 @@
             height: 300px;
             border-radius: 300px;
         }
-    } // quote
-    .homepage-quote-form {
-        width: 90%;
-        .signup-row {
-            .mc-field-group {
-                float: none;
-                width: 100%;
-                &:nth-child(1) {
-                    .field-spacer {
-                        padding-right: 0;
-                    }
-                }
-                &:nth-child(2) {
-                    .field-spacer {
-                        margin-top: 45px;
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
     }
 }
 
 @media(max-width: @screen-sm) {
-    .homepage-intro {
+    .intro-wrapper {
         display: block;
         width: 100%;
         &.bg {
@@ -361,13 +334,5 @@
     }
     .homepage-service-actions {
         padding: 5px;
-    }
-    .homepage-quote-form {
-        .signup-row {
-            .mc-field-group {
-                float: none;
-                width: 100%
-            }
-        }
     }
 }
