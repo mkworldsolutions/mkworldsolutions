@@ -1,35 +1,5 @@
-// *** intro ***
-.homepage-intro-wrapper {
-    display: table;
-    width: 100%;
-    background-color: @color-intro-bg;
-}
-
-.homepage-intro {
-    display: table-cell;
-    width: 50%;
-    color: @color-intro-text;
-    &:not(.bg) {
-        padding: 80px 0 99px 98px;
-    }
-    .homepage-intro-title {
-        font-size: 36px;
-        letter-spacing: -0.2px;
-        animation: intro 3s;
-    }
-    .homepage-intro-content {
-        font-size: 20px;
-        letter-spacing: -0.1px;
-        margin-top: 24px;
-        animation: intro 3s;
-    }
-    .homepage-intro-actions {
-        margin-top: 72px;
-    }
-}
-
 // images
-.homepage-intro {
+.intro-wrapper {
     &.bg {
         background: 0 20% / cover no-repeat url('/images/homepage_intro.png');
     }
@@ -37,7 +7,7 @@
 
 // *** services ***
 .homepage-services-wrapper {
-    background-color: @color-services-bg;
+    background-color: @color-light-bg;
 }
 
 .homepage-services-heading {
@@ -253,79 +223,6 @@
     margin: 0 auto;
     text-align: right;
     padding: 100px 0 71px 0;
-}
-
-// *** quote section ***
-.homepage-quote-wrapper {
-    background-color: #e4e6ed;
-}
-
-.homepage-quote-heading-wrapper {
-    padding: 100px 0 0 98px;
-    .homepage-quote-heading {
-        font-size: 36px;
-        font-weight: 600;
-        letter-spacing: -0.2px;
-        color: #2a6292;
-    }
-    .homepage-quote-subheading {
-        font-size: 20px;
-        letter-spacing: -0.1px;
-        color: #25282a;
-        margin-top: 16px;
-    }
-}
-
-.homepage-quote-form {
-    .signup-row {
-        .mc-field-group {
-            float: left;
-            width: 50%;
-            &:nth-child(1) {
-                .field-spacer {
-                    padding-right: 10px;
-                }
-            }
-            &:nth-child(2) {
-                .field-spacer {
-                    padding-left: 10px;
-                }
-            }
-        }
-    }
-    .label-signup {
-        display: block;
-        font-size: 12px;
-        line-height: 16px;
-        color: #2c3f5b;
-        text-align: left;
-    }
-    .textbox-signup {
-        display: block;
-        width: 100%;
-        font-size: 16px;
-        line-height: 24px;
-        color: rgba(37, 40, 42, 0.87);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid #758294;
-        background: transparent;
-        background-color: #e4e6ed;
-        outline: none;
-        &:placeholder {
-            color: #758294;
-        }
-    }
-    .field-group-desc {
-        margin-top: 45px;
-    }
-}
-
-.homepage-quote-action {
-    text-align: right;
-    margin-top: 38px;
-    padding-bottom: 60px;
 }
 
 // *** another component ***
