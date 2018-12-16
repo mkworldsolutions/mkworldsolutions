@@ -5728,9 +5728,9 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-scroll-callback@^0.1.2:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/scroll-callback/-/scroll-callback-0.1.11.tgz#278b4a111cdd8f410f82510bb5f145fb270c4a4a"
+scroll-callback@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/scroll-callback/-/scroll-callback-0.3.1.tgz#6805afbe0e0f313279997567c4852ff667db0a57"
 
 select-hose@^2.0.0:
   version "2.0.0"

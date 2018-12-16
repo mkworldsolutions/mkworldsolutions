@@ -1,4 +1,4 @@
 const fs = require('fs-extra');
 
 fs.remove('dist');
-console.log("Dist Is Cleaned...");
+console.log('Your DIST directory is cleaned.');
