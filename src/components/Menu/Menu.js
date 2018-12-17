@@ -34,6 +34,7 @@ class Menu extends Component {
 
     render() {
         const { data, isLoaded, menuOpen } = this.state;
+        const pathName = window.location.pathname;
 
         if (!isLoaded) {
             return null;
@@ -58,7 +59,7 @@ class Menu extends Component {
                         {
                             data.links.map(link => (
                                 <li className='menu-item' key={link.name}>
-                                    <a href={link.url} className='menu-link'>
+                                    <a href={link.url} className={`menu-link${pathName.indexOf(link.url) > -1 ? ' selected' : ''}`}>
                                         {link.name}
                                     </a>
                                 </li>

@@ -1,0 +1,279 @@
+.services.intro-icon {
+    float: left;
+    width: 25%;
+    svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.intro-wrapper.services {
+    .intro-icon-container {
+        position: absolute;
+        min-height: 300px;
+        top: 50px;
+    }
+    .intro-icon-wrapper {
+        position: absolute;
+        &:nth-child(1) {
+            background: -35px 20% / cover no-repeat url('/images/service_intro1.png');
+            border-radius: 208px;
+            left: 0;
+            height: 208px;
+            width: 208px;
+        }
+        &:nth-child(2) {
+            background: -50px 20% / cover no-repeat url('/images/service_intro2.png');
+            border-radius: 148px;
+            left: 150px;
+            top: 20px;
+            height: 148px;
+            width: 148px;
+        }
+        &:nth-child(3) {
+            background: 0 20% / cover no-repeat url('/images/service_intro3.png');
+            border-radius: 148px;
+            left: 80px;
+            top: 130px;
+            height: 148px;
+            width: 148px;
+        }
+    }
+}
+
+.services-info-container {
+    padding: 80px 98px;
+}
+
+.service-info-wrapper {
+    margin: 0 auto 98px;
+    max-width: 1200px;
+    .service-info-content {
+        float: left;
+    }
+    &.primary {
+        .service-info-content {
+            &:nth-child(1) {
+                width: 40%
+            }
+            &:nth-child(2) {
+                width: 60%
+            }
+        }
+    }
+    &.secondary {
+        .service-info-content {
+            &:nth-child(1) {
+                width: 60%
+            }
+            &:nth-child(2) {
+                text-align: right;
+                width: 40%
+            }
+        }
+    }
+    .info-icon {
+        border-radius: 232px;
+        display: inline-block;
+        height: 232px;
+        position: relative;
+        text-align: center;
+        width: 232px;
+        &.icon-1 {
+            background-color: #d2cbd8;
+        }
+        &.icon-2 {
+            background-color: #d2cbd8;
+        }
+        &.icon-3 {
+            background-color: #c1dfea;
+        }
+        &.icon-4 {
+            background-color: #a89dbe;
+        }
+        &.icon-5 {
+            background-color: #d0c0cc;
+        }
+        &.icon-6 {
+            background-color: #b7879a;
+        }
+        &.double {
+            svg {
+                display: block;
+                height: auto;
+                position: absolute;
+                &:nth-child(1) {
+                    top: 25%;
+                    left: 30%;
+                }
+                &:nth-child(2) {
+                    bottom: 25%;
+                    right: 30%;
+                }
+            }
+        }
+        svg {
+            display: inline;
+            height: 232px;
+            vertical-align: middle;
+            width: 63px;
+        }
+    }
+}
+
+.info-heading {
+    color: #2a6292;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.24px;
+}
+
+.info-subheading {
+    color: #25282a;
+    font-size: 24px;
+    margin-top: 8px;
+    letter-spacing: -0.16px;
+}
+
+.info-list {
+    margin: 24px 0 0 15px;
+}
+
+.info-listitem {
+    padding: 8px 0;
+    .info-item-icon {
+        margin-right: 50px;
+        svg {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    .info-item-content {
+        color: #25282a;
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: -0.13px;
+    }
+}
+
+@media(max-width: @screen-lg) {
+    .info-listitem .info-item-icon {
+        margin-right: 10px;
+    }
+    .info-heading {
+        color: #2a6292;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.16px;
+    }
+    .info-subheading {
+        color: #25282a;
+        font-size: 24px;
+        margin-top: 8px;
+        letter-spacing: -0.13px;
+    }
+    .info-listitem .info-item-content {
+        font-size: 14px;
+        letter-spacing: -0.09px;
+    }
+}
+
+@media (min-width: @screen-md) and (max-width: @screen-lg) {
+    .service-info-wrapper .info-icon {
+        border-radius: 150px;
+        height: 150px;
+        width: 150px;
+        &.double {
+            svg:nth-child(1) {
+                top: 20%;
+                left: 25%;
+            }
+            svg:nth-child(2) {
+                bottom: 20%;
+                right: 25%;
+            }
+        }
+        svg {
+            height: 150px;
+            width: 50px;
+        }
+    }
+}
+
+@media(max-width: @screen-md) {
+    .service-info-wrapper {
+        margin: 0 auto 49px;
+    }
+    .service-info-wrapper.secondary {
+        display: flex;
+        flex-direction: column;
+    }
+    .service-info-wrapper.primary .service-info-content:nth-child(1) {
+        text-align: center;
+    }
+    .service-info-wrapper.secondary .service-info-content:nth-child(1) {
+        order: 2;
+    }
+    .service-info-wrapper.secondary .service-info-content:nth-child(2) {
+        text-align: center;
+    }
+    .service-info-wrapper .service-info-content {
+        margin: 15px 0;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
+    .intro-icon-container {
+        top: 100px;
+    }
+    .intro-wrapper.services .intro-icon-wrapper:nth-child(1) {
+        border-radius: 140px;
+        height: 140px;
+        width: 140px;
+    }
+    .intro-wrapper.services .intro-icon-wrapper:nth-child(2) {
+        border-radius: 105px;
+        height: 105px;
+        left: 95px;
+        width: 105px;
+    }
+    .intro-wrapper.services .intro-icon-wrapper:nth-child(3) {
+        border-radius: 95px;
+        height: 95px;
+        left: 60px;
+        top: 103px;
+        width: 95px;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .intro-wrapper.services {
+        min-height: 350px;
+        .intro-icon-container {
+            left: 50px;
+        }
+    }
+    .services-info-container {
+        padding: 20px 24px;
+    }
+    .service-info-wrapper .info-icon {
+        border-radius: 150px;
+        height: 150px;
+        width: 150px;
+        &.double {
+            svg:nth-child(1) {
+                top: 20%;
+                left: 25%;
+            }
+            svg:nth-child(2) {
+                bottom: 20%;
+                right: 25%;
+            }
+        }
+        svg {
+            height: 150px;
+            width: 50px;
+        }
+    }
+}

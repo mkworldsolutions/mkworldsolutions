@@ -1,4 +1,76 @@
-// *** mail chimp
+.quote-wrapper {
+    background-color: @color-medium-bg;
+}
+
+.quote-heading-wrapper {
+    padding: 100px 0 0 98px;
+    .quote-heading {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        color: #2a6292;
+    }
+    .quote-subheading {
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        color: #25282a;
+        margin-top: 16px;
+    }
+}
+
+.quote-form {
+    .signup-row {
+        .mc-field-group {
+            float: left;
+            width: 50%;
+            &:nth-child(1) {
+                .field-spacer {
+                    padding-right: 10px;
+                }
+            }
+            &:nth-child(2) {
+                .field-spacer {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .label-signup {
+        display: block;
+        font-size: 12px;
+        line-height: 16px;
+        color: #2c3f5b;
+        text-align: left;
+    }
+    .textbox-signup {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(37, 40, 42, 0.87);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #758294;
+        background: transparent;
+        background-color: #e4e6ed;
+        outline: none;
+        &:placeholder {
+            color: #758294;
+        }
+    }
+    .field-group-desc {
+        margin-top: 45px;
+    }
+}
+
+.quote-action {
+    text-align: right;
+    margin-top: 38px;
+    padding-bottom: 60px;
+}
+
+// *** mail chimp override
 // error
 #mc_embed_signup div.mce_inline_error {
     font-size: 12px !important;
@@ -10,4 +82,49 @@
 #mce-success-response {
     color: #0dc600;
     margin-top: 15px;
+}
+
+// media
+@media(max-width: @screen-xlg) {
+    .quote-form {
+        max-width: 700px;
+    }
+}
+
+@media(max-width: @screen-lg) {
+    .quote-heading-wrapper {
+        padding: 100px 0 0 0;
+        text-align: center;
+    } // quote
+    .quote-form {
+        width: 90%;
+        .signup-row {
+            .mc-field-group {
+                float: none;
+                width: 100%;
+                &:nth-child(1) {
+                    .field-spacer {
+                        padding-right: 0;
+                    }
+                }
+                &:nth-child(2) {
+                    .field-spacer {
+                        margin-top: 45px;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: @screen-sm) {
+    .quote-form {
+        .signup-row {
+            .mc-field-group {
+                float: none;
+                width: 100%
+            }
+        }
+    }
 }

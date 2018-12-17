@@ -1,45 +1,11 @@
-// *** intro ***
-.homepage-intro-wrapper {
-    display: table;
-    width: 100%;
-    background-color: @color-intro-bg;
-}
-
-.homepage-intro {
-    display: table-cell;
-    width: 50%;
-    color: @color-intro-text;
-    &:not(.bg) {
-        padding: 80px 0 99px 98px;
-    }
-    .homepage-intro-title {
-        font-size: 36px;
-        letter-spacing: -0.2px;
-        animation: intro 3s;
-    }
-    .homepage-intro-content {
-        font-size: 20px;
-        letter-spacing: -0.1px;
-        margin-top: 24px;
-        animation: intro 3s;
-    }
-    .homepage-intro-actions {
-        margin-top: 72px;
-    }
-}
-
 // images
-.homepage-intro {
+.intro-wrapper {
     &.bg {
         background: 0 20% / cover no-repeat url('/images/homepage_intro.png');
     }
 }
 
 // *** services ***
-.homepage-services-wrapper {
-    background-color: @color-services-bg;
-}
-
 .homepage-services-heading {
     font-size: 36px;
     letter-spacing: -0.2px;
@@ -152,7 +118,7 @@
                 svg:nth-child(1) {
                     position: absolute;
                     top: 13%;
-                    left: 25%;
+                    left: 20%;
                 }
                 svg:nth-child(2) {
                     position: absolute;
@@ -255,79 +221,6 @@
     padding: 100px 0 71px 0;
 }
 
-// *** quote section ***
-.homepage-quote-wrapper {
-    background-color: #e4e6ed;
-}
-
-.homepage-quote-heading-wrapper {
-    padding: 100px 0 0 98px;
-    .homepage-quote-heading {
-        font-size: 36px;
-        font-weight: 600;
-        letter-spacing: -0.2px;
-        color: #2a6292;
-    }
-    .homepage-quote-subheading {
-        font-size: 20px;
-        letter-spacing: -0.1px;
-        color: #25282a;
-        margin-top: 16px;
-    }
-}
-
-.homepage-quote-form {
-    .signup-row {
-        .mc-field-group {
-            float: left;
-            width: 50%;
-            &:nth-child(1) {
-                .field-spacer {
-                    padding-right: 10px;
-                }
-            }
-            &:nth-child(2) {
-                .field-spacer {
-                    padding-left: 10px;
-                }
-            }
-        }
-    }
-    .label-signup {
-        display: block;
-        font-size: 12px;
-        line-height: 16px;
-        color: #2c3f5b;
-        text-align: left;
-    }
-    .textbox-signup {
-        display: block;
-        width: 100%;
-        font-size: 16px;
-        line-height: 24px;
-        color: rgba(37, 40, 42, 0.87);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid #758294;
-        background: transparent;
-        background-color: #e4e6ed;
-        outline: none;
-        &:placeholder {
-            color: #758294;
-        }
-    }
-    .field-group-desc {
-        margin-top: 45px;
-    }
-}
-
-.homepage-quote-action {
-    text-align: right;
-    margin-top: 38px;
-    padding-bottom: 60px;
-}
-
 // *** another component ***
 // key frames
 .keyframeIntro {
@@ -378,17 +271,11 @@
 }
 
 // media
-@media(max-width: @screen-xlg) {
-    .homepage-quote-form {
-        max-width: 700px;
-    }
-}
-
 @media(max-width: @screen-lg) {
-    .homepage-intro:not(.bg) {
+    .intro-wrapper:not(.bg) {
         padding: 80px 0 99px 48px;
     }
-    .homepage-intro.bg {
+    .intro-wrapper.bg {
         background: top/ cover no-repeat url('/images/homepage_intro.png');
     } // services
     .homepage-services-heading {
@@ -410,8 +297,7 @@
     .homepage-client-actions {
         text-align: center;
     } // client
-    .homepage-client-heading-wrapper,
-    .homepage-quote-heading-wrapper {
+    .homepage-client-heading-wrapper {
         padding: 100px 0 0 0;
         text-align: center;
     }
@@ -424,31 +310,11 @@
             height: 300px;
             border-radius: 300px;
         }
-    } // quote
-    .homepage-quote-form {
-        width: 90%;
-        .signup-row {
-            .mc-field-group {
-                float: none;
-                width: 100%;
-                &:nth-child(1) {
-                    .field-spacer {
-                        padding-right: 0;
-                    }
-                }
-                &:nth-child(2) {
-                    .field-spacer {
-                        margin-top: 45px;
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
     }
 }
 
 @media(max-width: @screen-sm) {
-    .homepage-intro {
+    .intro-wrapper {
         display: block;
         width: 100%;
         &.bg {
@@ -468,13 +334,5 @@
     }
     .homepage-service-actions {
         padding: 5px;
-    }
-    .homepage-quote-form {
-        .signup-row {
-            .mc-field-group {
-                float: none;
-                width: 100%
-            }
-        }
     }
 }
