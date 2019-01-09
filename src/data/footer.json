@@ -61,20 +61,5 @@
                 "name": "Social Media"
             }
         ]
-    },
-    "Our Work": {
-        "name": "Our Work",
-        "url": "/ourwork.html",
-        "subs": [
-            {
-                "name": "Responsive Web"
-            },
-            {
-                "name": "Advertisements"
-            },
-            {
-                "name": "Business Marketing"
-            }
-        ]
     }
 }
