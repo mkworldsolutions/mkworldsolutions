@@ -4,17 +4,31 @@
     border: none;
     border-radius: @height-btn;
     color: @color-text-btn;
+    cursor: pointer;
     display: inline-block;
+    font-size: 16px;
     height: @height-btn;
+    letter-spacing: -0.2px;
     line-height: @height-btn;
     text-align: center;
     text-decoration: none;
     outline: none;
-    cursor: pointer;
+    width: 300px;
     &:hover {
         background-color: @color-bg-btn-hover;
         box-shadow: 0 0 0 2px rgba(45, 95, 139, .5);
     }
+    // hover override
+    &.btn-secondary:hover {
+        background-color: @color-btn-secondary-hover;
+    }
+}
+
+.btn-secondary {
+    border-radius: 0;
+    background-color: @color-btn-secondary;
+    color: #555555;
+    border: 1px solid #555555;
 }
 
 // menu
@@ -55,24 +69,12 @@
     }
 }
 
-.btn-servicequote {
-    width: 300px;
-    font-size: 24px;
-    letter-spacing: -0.2px;
-}
-
 .a-viewWork {
     display: inline-block;
     width: 300px;
     font-size: 24px;
     letter-spacing: -0.2px;
     text-decoration: none;
-}
-
-.btn-freeQuote {
-    font-size: 24px;
-    letter-spacing: -0.2px;
-    width: 300px;
 }
 
 @media(max-width: @screen-lg) {
