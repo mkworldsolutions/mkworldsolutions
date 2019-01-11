@@ -57,6 +57,19 @@ body {
     }
 }
 
+// *** accordion ***
+.accordion-container {
+    & * {
+        max-height: 0px;
+        opacity: 0;
+        transition: all .2s;
+    }
+    &.show * {
+        max-height: 10000px;
+        opacity: 1;
+    }
+}
+
 //pages
 @import 'homepage';
 @import 'services';
