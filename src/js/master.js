@@ -4,24 +4,33 @@ import { callbackAtElementSurface } from 'scroll-callback';
 
 import { Menu, Footer } from '../components';
 
-/*
-// to do - add a second scroll event for client carousel once simply callback is fixed
-function bumpHomepageClient(el) {
-    el.classList.add('bump');
-}
-
-function addCarouselEvent() {
-    const homepageClient = document.getElementById('homepage-client-carousel');
-    if (homepageClient !== null) {
-        callbackAtElementSurface(bumpHomepageClient, 500, 'homepage-client-carousel');
-    }
-    window.removeEventListener('scroll', addCarouselEvent);
-}
-*/
-
 function showHomepageService(el) {
     el.classList.add('open');
 }
+
+const show = (el) => {
+    el.classList.add('show');
+};
+
+const hide = (el) => {
+    el.classList.remove('show');
+};
+
+const showAccordion = (accordionContainerId) => {
+    show(document.getElementById(accordionContainerId));
+};
+
+const hideAccordion = (accordionContainerId) => {
+    hide(document.getElementById(accordionContainerId));
+};
+
+const onAccordionTrigger = (isShow, accordionContainerId) => {
+    if (isShow) {
+        showAccordion(accordionContainerId);
+    } else {
+        hideAccordion(accordionContainerId);
+    }
+};
 
 (() => {
     const headerContainer = document.getElementById('header-container');
@@ -44,4 +53,10 @@ function showHomepageService(el) {
     if (homepageService !== null) {
         callbackAtElementSurface(showHomepageService, 500, 'homepage-services');
     }
+
+    // events
+    document.getElementById('btn-view-design-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-design-process'));
+    document.getElementById('btn-close-design-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-design-process'));
+    document.getElementById('btn-view-development-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-development-process'));
+    document.getElementById('btn-close-development-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-development-process'));
 })();
