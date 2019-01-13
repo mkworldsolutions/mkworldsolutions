@@ -10,4 +10,25 @@
 
 .contact-container .homepage-services {
     margin-bottom: 120px;
+    .homepage-services-format {
+        display: block;
+    }
+    .homepage-service {
+        width: 25%;
+    }
+}
+
+@media(max-width: @screen-md) {
+    .contact-container .homepage-services .homepage-service {
+        width: 50%;
+    }
+}
+
+@media(max-width: @screen-sm) {
+    .contact-intro-bg {
+        background-position-x: 50%;
+    }
+    .contact-container .homepage-services .homepage-service {
+        width: 100%;
+    }
 }
