@@ -35,6 +35,14 @@ const onAccordionTrigger = (isShow, accordionContainerId, hideElementId, showEle
     document.getElementById(showElementId).classList.remove('hide');
 };
 
+const addAccordionTrigger = (triggerId, triggerToggleId, accordionId) => {
+    const trigger = document.getElementById(triggerId);
+    if (trigger !== null) {
+        trigger.addEventListener('click',
+            () => onAccordionTrigger(true, accordionId, triggerId, triggerToggleId));
+    }
+};
+
 (() => {
     const headerContainer = document.getElementById('header-container');
     if (headerContainer !== null) {
@@ -59,8 +67,8 @@ const onAccordionTrigger = (isShow, accordionContainerId, hideElementId, showEle
 
     // events
     // should definitely refactor with functions
-    document.getElementById('btn-view-design-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-design-process', 'btn-view-design-process', 'btn-close-design-process'));
-    document.getElementById('btn-close-design-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-design-process', 'btn-close-design-process', 'btn-view-design-process'));
-    document.getElementById('btn-view-development-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-development-process', 'btn-view-development-process', 'btn-close-development-process'));
-    document.getElementById('btn-close-development-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-development-process', 'btn-close-development-process', 'btn-view-development-process'));
+    addAccordionTrigger('btn-view-design-process', 'btn-close-design-process', 'accordion-design-process');
+    addAccordionTrigger('btn-close-design-process', 'btn-view-design-process', 'accordion-design-process');
+    addAccordionTrigger('btn-view-development-process', 'btn-close-development-process', 'accordion-development-process');
+    addAccordionTrigger('btn-close-development-process', 'btn-view-development-process', 'accordion-development-process');
 })();
