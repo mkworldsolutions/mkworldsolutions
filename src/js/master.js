@@ -24,12 +24,15 @@ const hideAccordion = (accordionContainerId) => {
     hide(document.getElementById(accordionContainerId));
 };
 
-const onAccordionTrigger = (isShow, accordionContainerId) => {
+const onAccordionTrigger = (isShow, accordionContainerId, hideElementId, showElementId) => {
     if (isShow) {
         showAccordion(accordionContainerId);
     } else {
         hideAccordion(accordionContainerId);
     }
+
+    document.getElementById(hideElementId).classList.add('hide');
+    document.getElementById(showElementId).classList.remove('hide');
 };
 
 (() => {
@@ -55,8 +58,9 @@ const onAccordionTrigger = (isShow, accordionContainerId) => {
     }
 
     // events
-    document.getElementById('btn-view-design-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-design-process'));
-    document.getElementById('btn-close-design-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-design-process'));
-    document.getElementById('btn-view-development-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-development-process'));
-    document.getElementById('btn-close-development-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-development-process'));
+    // should definitely refactor with functions
+    document.getElementById('btn-view-design-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-design-process', 'btn-view-design-process', 'btn-close-design-process'));
+    document.getElementById('btn-close-design-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-design-process', 'btn-close-design-process', 'btn-view-design-process'));
+    document.getElementById('btn-view-development-process').addEventListener('click', () => onAccordionTrigger(true, 'accordion-development-process', 'btn-view-development-process', 'btn-close-development-process'));
+    document.getElementById('btn-close-development-process').addEventListener('click', () => onAccordionTrigger(false, 'accordion-development-process', 'btn-close-development-process', 'btn-view-development-process'));
 })();
