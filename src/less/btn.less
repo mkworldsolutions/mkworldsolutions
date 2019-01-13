@@ -6,7 +6,7 @@
     color: @color-text-btn;
     cursor: pointer;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     height: @height-btn;
     letter-spacing: -0.2px;
     line-height: @height-btn;
@@ -17,8 +17,7 @@
     &:hover {
         background-color: @color-bg-btn-hover;
         box-shadow: 0 0 0 2px rgba(45, 95, 139, .5);
-    }
-    // hover override
+    } // hover override
     &.btn-secondary:hover {
         background-color: @color-btn-secondary-hover;
     }
@@ -72,9 +71,14 @@
 .a-viewWork {
     display: inline-block;
     width: 300px;
-    font-size: 24px;
     letter-spacing: -0.2px;
     text-decoration: none;
+}
+
+@media(min-width: @screen-xlg) {
+    .btn-learnmore {
+        width: 300px;
+    }
 }
 
 @media(max-width: @screen-lg) {
