@@ -15,6 +15,10 @@
         {
             "name": "Contact",
             "url": "/contact.html"
+        },
+        {
+            "name": "Our Work",
+            "url": "/ourwork.html"
         }
     ]
 }
