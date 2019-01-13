@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+.hide {
+    display: none !important;
+}
+
 // globals
 @import 'variables';
 @import 'utils';
@@ -70,6 +74,15 @@ body {
     }
 }
 
+.accordion-container .section-detail {
+    padding: 0;
+}
+
+.accordion-container.show .section-detail {
+    padding: 40px 0;
+}
+
+// generic sections
 //pages
 @import 'homepage';
 @import 'services';
