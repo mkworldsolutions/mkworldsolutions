@@ -60,7 +60,8 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: 'src/*.html', to: path.join(__dirname, 'dist'), flatten: true },
             { from: 'src/data', to: path.join(__dirname, 'dist/data'), flatten: true },
-            { from: 'src/images', to: path.join(__dirname, 'dist/images'), flatten: true }
+            { from: 'src/images', to: path.join(__dirname, 'dist/images'), flatten: true },
+            { from: 'sitemap.xml', to: path.join(__dirname, 'dist'), flatten: true }
         ])
     ]
 };
