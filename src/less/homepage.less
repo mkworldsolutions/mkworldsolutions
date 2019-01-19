@@ -21,7 +21,7 @@
 }
 
 .homepage-services {
-    max-width: 1200px;
+    max-width: @screen-max-width;
     margin: 0 auto;
     margin-top: 120px;
     text-align: center;
@@ -139,10 +139,10 @@
 }
 
 .homepage-services-actions {
-    max-width: 1200px;
+    max-width: @screen-max-width;
     margin: 0 auto;
     text-align: right;
-    button {
+    .btn {
         margin: 80px 0 106px 0;
     }
 }
@@ -215,7 +215,7 @@
 }
 
 .homepage-client-actions {
-    max-width: 1200px;
+    max-width: @screen-max-width;
     margin: 0 auto;
     text-align: right;
     padding: 100px 0 71px 0;
@@ -267,6 +267,13 @@
         100% {
             transform: scale(1);
         }
+    }
+}
+
+@media(min-width: @screen-lg) and (max-width: @screen-xlg) {
+    .homepage-services-actions,
+    .homepage-client-actions {
+        padding-right: 24px;
     }
 }
 
@@ -334,5 +341,10 @@
     }
     .homepage-service-actions {
         padding: 5px;
+    }
+    .homepage-client-carousel-item .homepage-client-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
     }
 }

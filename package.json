@@ -6,6 +6,7 @@
   "scripts": {
     "build": "yarn clean && cross-env NODE_ENV=production webpack --config webpack.prod.js",
     "build:dev": "yarn clean && cross-env NODE_ENV=development webpack --config webpack.dev.js && webpack-dev-server --config webpack.dev.js",
+    "pack:dev": "yarn clean && cross-env NODE_ENV=development webpack --config webpack.dev.js",
     "clean": "node cleandist.js",
     "lint": "eslint src",
     "test": "jest",
@@ -47,11 +48,12 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^3.0.1",
     "fs-extra": "^7.0.0",
     "jest": "^23.6.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "mini-css-extract-plugin": "^0.4.4",
+    "mini-css-extract-plugin": "^0.4.4",    
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"

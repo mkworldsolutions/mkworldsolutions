@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+.hide {
+    display: none !important;
+}
+
 // globals
 @import 'variables';
 @import 'utils';
@@ -41,6 +45,12 @@ body {
     &:not(.bg) {
         padding: 80px 0 99px 98px;
     }
+    &.single {
+        padding: 24px;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+    }
     .intro-title {
         font-size: 36px;
         letter-spacing: -0.2px;
@@ -57,7 +67,70 @@ body {
     }
 }
 
+// *** accordion ***
+.accordion-container {
+    &.hide * {
+        margin: 0;
+        max-height: 0px;
+        opacity: 0;
+        padding: 0;
+        transition: all .2s;
+    }
+    & * {
+        max-height: 10000px;
+        opacity: 1;
+    }
+}
+
+.accordion-container.hide .section-detail {
+    padding: 0;
+}
+
+.accordion-container .section-detail {
+    padding: 40px 24px;
+}
+
+// generic sections
+.section-banner-container {
+    background-color: #2c3f5b;
+}
+
+.section-banner-wrapper {
+    padding: 24px;
+}
+
+.section-banner-container .heading-text {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin: 0;
+}
+
+// light types
+.intro-content,
+.homepage-services-sub-heading,
+.homepage-client-subheading,
+.quote-subheading,
+.info-subheading,
+.info-item-content {
+    .type-light();
+}
+
 //pages
 @import 'homepage';
 @import 'services';
+@import 'process';
+@import 'contact';
+@import 'team';
+@import 'ourwork';
 @import 'quote-form';
+@media(max-width: @screen-md) {
+    .section-banner-container .heading-text {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: @screen-sm) {
+    .intro-wrapper.single {
+        display: table-cell;
+    }
+}

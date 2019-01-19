@@ -37,6 +37,15 @@ module.exports = {
                     'css-loader',
                     'less-loader'
                 ]
+            },
+            {
+                test: /\.(woff2?|ttf|otf|eot|svg)$/,
+                exclude: /node_modules/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: '/fonts'
+                }
             }
         ]
     },
@@ -51,7 +60,8 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: 'src/*.html', to: path.join(__dirname, 'dist'), flatten: true },
             { from: 'src/data', to: path.join(__dirname, 'dist/data'), flatten: true },
-            { from: 'src/images', to: path.join(__dirname, 'dist/images'), flatten: true }
+            { from: 'src/images', to: path.join(__dirname, 'dist/images'), flatten: true },
+            { from: 'sitemap.xml', to: path.join(__dirname, 'dist'), flatten: true }
         ])
     ]
 };

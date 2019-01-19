@@ -85,9 +85,9 @@
 }
 
 // media
-@media(max-width: @screen-xlg) {
+@media(min-width: @screen-lg) and (max-width: @screen-xxlg) {
     .quote-form {
-        max-width: 700px;
+        padding-left: 24px;
     }
 }
 
@@ -115,6 +115,9 @@
                 }
             }
         }
+    }
+    .quote-action {
+        text-align: center;
     }
 }
 

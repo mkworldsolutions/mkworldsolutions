@@ -1,16 +1,20 @@
-.clear:before,
-.clear:after {
+.clearfix {
     display: table;
     content: '';
     clear: both;
 }
 
+.clear:before,
+.clear:after {
+    .clearfix();
+}
+
 .content-max-container {
-    max-width: 1200px;
+    max-width: @screen-max-width;
     margin: 0 auto;
 }
 
-@media(min-width: @screen-xlg) {
+@media(min-width: @screen-xxlg) {
     .content-max-container {
         &>* {
             padding-left: 0 !important;
