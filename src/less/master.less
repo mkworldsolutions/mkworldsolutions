@@ -69,23 +69,25 @@ body {
 
 // *** accordion ***
 .accordion-container {
-    & * {
+    &.hide * {
+        margin: 0;
         max-height: 0px;
         opacity: 0;
+        padding: 0;
         transition: all .2s;
     }
-    &.show * {
+    & * {
         max-height: 10000px;
         opacity: 1;
     }
 }
 
-.accordion-container .section-detail {
+.accordion-container.hide .section-detail {
     padding: 0;
 }
 
-.accordion-container.show .section-detail {
-    padding: 40px 0;
+.accordion-container .section-detail {
+    padding: 40px 24px;
 }
 
 // generic sections
