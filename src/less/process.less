@@ -13,23 +13,11 @@
     width: 100%;
 }
 
-.section-development .homepage-services-actions {
-    text-align: left;
-}
-
 .process-container .info-wrapper {
     margin: 0 auto;
 }
 
 .process-container .info-heading {
-    padding: 28px 0;
-}
-
-.process-container .accordion-container .info-heading {
-    padding: 0;
-}
-
-.process-container .accordion-container.show .info-heading {
     padding: 28px 0;
 }
 
@@ -55,5 +43,23 @@
     }
     &.icon-7 {
         background: center 0 / cover no-repeat url('/images/process_design_6.jpg')
+    }
+    &.icon-8 {
+        background: center 0 / cover no-repeat url('/images/process_dev_1.jpg')
+    }
+    &.icon-9 {
+        background: center 0 / cover no-repeat url('/images/process_dev_2.jpg')
+    }
+}
+
+@media(max-width: @screen-xlg) {
+    .process-container>*:not(.accordion-container) {
+        padding: 24px;
+    }
+}
+
+@media(max-width: @screen-sm) {
+    .process-container .btn {
+        width: 100%;
     }
 }

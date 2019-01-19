@@ -146,26 +146,31 @@
 }
 
 .info-listitem {
-    padding: 8px 0;
+    padding: 18px 0;
     .info-item-icon {
-        margin-right: 50px;
+        float: left;
+        width: 10%;
         svg {
             height: 20px;
+            margin-right: 50px;
             width: 20px;
         }
     }
     .info-item-content {
+        float: left;
         color: #25282a;
         font-size: 20px;
-        line-height: 34px;
         letter-spacing: -0.13px;
+        width: 90%;
     }
 }
 
+.info-listitem:before,
+.info-listitem:after {
+    .clearfix();
+}
+
 @media(max-width: @screen-lg) {
-    .info-listitem .info-item-icon {
-        margin-right: 10px;
-    }
     .info-heading {
         color: #2a6292;
         font-size: 24px;
