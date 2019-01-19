@@ -1,8 +1,12 @@
-.clear:before,
-.clear:after {
+.clearfix {
     display: table;
     content: '';
     clear: both;
+}
+
+.clear:before,
+.clear:after {
+    .clearfix();
 }
 
 .content-max-container {
