@@ -9,11 +9,11 @@ function showHomepageService(el) {
 }
 
 const show = (el) => {
-    el.classList.add('show');
+    el.classList.remove('hide');
 };
 
 const hide = (el) => {
-    el.classList.remove('show');
+    el.classList.add('hide');
 };
 
 const showAccordion = (accordionContainerId) => {
@@ -31,15 +31,15 @@ const onAccordionTrigger = (isShow, accordionContainerId, hideElementId, showEle
         hideAccordion(accordionContainerId);
     }
 
-    document.getElementById(hideElementId).classList.add('hide');
-    document.getElementById(showElementId).classList.remove('hide');
+    document.getElementById(hideElementId).classList.add('fade');
+    document.getElementById(showElementId).classList.remove('fade');
 };
 
-const addAccordionTrigger = (triggerId, triggerToggleId, accordionId) => {
+const addAccordionTrigger = (shouldShowAccordion, triggerId, triggerToggleId, accordionId) => {
     const trigger = document.getElementById(triggerId);
     if (trigger !== null) {
         trigger.addEventListener('click',
-            () => onAccordionTrigger(true, accordionId, triggerId, triggerToggleId));
+            () => onAccordionTrigger(shouldShowAccordion, accordionId, triggerId, triggerToggleId));
     }
 };
 
@@ -67,8 +67,8 @@ const addAccordionTrigger = (triggerId, triggerToggleId, accordionId) => {
 
     // events
     // should definitely refactor with functions
-    addAccordionTrigger('btn-view-design-process', 'btn-close-design-process', 'accordion-design-process');
-    addAccordionTrigger('btn-close-design-process', 'btn-view-design-process', 'accordion-design-process');
-    addAccordionTrigger('btn-view-development-process', 'btn-close-development-process', 'accordion-development-process');
-    addAccordionTrigger('btn-close-development-process', 'btn-view-development-process', 'accordion-development-process');
+    addAccordionTrigger(true, 'btn-view-design-process', 'btn-close-design-process', 'accordion-design-process');
+    addAccordionTrigger(false, 'btn-close-design-process', 'btn-view-design-process', 'accordion-design-process');
+    addAccordionTrigger(true, 'btn-view-development-process', 'btn-close-development-process', 'accordion-development-process');
+    addAccordionTrigger(false, 'btn-close-development-process', 'btn-view-development-process', 'accordion-development-process');
 })();
