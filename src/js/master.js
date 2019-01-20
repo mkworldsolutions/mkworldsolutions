@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { callbackAtElementSurface } from 'scroll-callback';
 
-import { Menu, Footer } from '../components';
+import { Footer, Menu } from '../components';
 
 function showHomepageService(el) {
     el.classList.add('open');
