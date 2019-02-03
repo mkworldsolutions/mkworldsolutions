@@ -1,5 +1,6 @@
-build/
-dist/
-node_modules/
+/build/
+/dist/
+/reports/
+/node_modules/
 yarn-error.log
 .ds_store
