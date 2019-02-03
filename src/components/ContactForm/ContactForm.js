@@ -55,7 +55,7 @@ const ContactForm = () => (
                                 name="b_2a10e2d1e9a72c53f5659f50c_15d233650f" tabindex="-1" value="">
                             </input>
                         </div>
-                        <div className="clear quote-action">
+                        <div className="clear btn-wrapper">
                             <input type="submit" value="Free quote" name="subscribe" id="mc-embedded-subscribe"
                                 className="button btn btn-freeQuote"></input>
                         </div>
