@@ -1,4 +1,12 @@
 @height-btn: 66px;
+.btn-wrapper {
+    .content-max-container();
+    text-align: right;
+    .btn {
+        margin: 80px 0 106px 0;
+    }
+}
+
 .btn {
     background-color: @color-bg-btn;
     border: none;
@@ -31,10 +39,13 @@
 }
 
 .btn-secondary {
-    border-radius: 0;
+    border-radius: 3px;
     background-color: @color-btn-secondary;
     color: #555555;
-    border: 1px solid #555555;
+    border: 1px solid #d2d3dc;
+    &.light {
+        border: 1px solid #2a6292;
+    }
 }
 
 // menu
@@ -88,7 +99,16 @@
     }
 }
 
+@media(min-width: @screen-lg) and (max-width: @screen-xlg) {
+    .btn-wrapper {
+        padding-right: 24px;
+    }
+}
+
 @media(max-width: @screen-lg) {
+    .btn-wrapper {
+        text-align: center;
+    }
     .btn-learnmore {
         font-size: 24px;
     }

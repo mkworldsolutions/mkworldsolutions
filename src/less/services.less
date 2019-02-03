@@ -45,8 +45,6 @@
     padding: 80px 98px;
 }
 
-@info-content-primary-width: 70%;
-@info-content-secondary-width: 30%;
 .info-wrapper {
     margin: 0 auto 98px;
     max-width: @screen-max-width;
@@ -128,7 +126,7 @@
 }
 
 .info-heading {
-    color: #2a6292;
+    color: @color-info-heading-text;
     font-size: 36px;
     font-weight: 600;
     letter-spacing: -0.24px;
@@ -172,7 +170,6 @@
 
 @media(max-width: @screen-lg) {
     .info-heading {
-        color: #2a6292;
         font-size: 24px;
         font-weight: 600;
         letter-spacing: -0.16px;

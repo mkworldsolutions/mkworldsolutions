@@ -71,4 +71,10 @@ const addAccordionTrigger = (shouldShowAccordion, triggerId, triggerToggleId, ac
     addAccordionTrigger(false, 'btn-close-design-process', 'btn-view-design-process', 'accordion-design-process');
     addAccordionTrigger(true, 'btn-view-development-process', 'btn-close-development-process', 'accordion-development-process');
     addAccordionTrigger(false, 'btn-close-development-process', 'btn-view-development-process', 'accordion-development-process');
+    addAccordionTrigger(true, 'btn-view-floatspa19', 'btn-close-floatspa19', 'accordion-floatspa19');
+    addAccordionTrigger(false, 'btn-close-floatspa19', 'btn-view-floatspa19', 'accordion-floatspa19');
+    addAccordionTrigger(true, 'btn-view-ews', 'btn-close-ews', 'accordion-ews');
+    addAccordionTrigger(false, 'btn-close-ews', 'btn-view-ews', 'accordion-ews');
+    addAccordionTrigger(true, 'btn-view-sereneame', 'btn-close-sereneame', 'accordion-sereneame');
+    addAccordionTrigger(false, 'btn-close-sereneame', 'btn-view-sereneame', 'accordion-sereneame');
 })();

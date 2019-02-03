@@ -10,6 +10,10 @@ body {
     display: none !important;
 }
 
+.center {
+    text-align: center
+}
+
 // globals
 @import 'variables';
 @import 'utils';
@@ -28,6 +32,18 @@ body {
 
 .section-medium {
     background-color: @color-medium-bg;
+}
+
+.section-alt {
+    background-color: @color-alt-1-bg;
+}
+
+.section-alt-2 {
+    background-color: @color-alt-2-bg;
+}
+
+.section-alt-3 {
+    background-color: @color-alt-3-bg;
 }
 
 // *** intro ***
@@ -143,5 +159,5 @@ body {
 .content-container {
     box-shadow: 0 0 2px 0 rgba(85, 85, 85, .7);
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: @screen-xxlg;
 }
