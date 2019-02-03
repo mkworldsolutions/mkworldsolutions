@@ -1,7 +1,3 @@
-.ourwork-container .info-wrapper {
-    margin-bottom: 0;
-}
-
 .ourwork-intro-bg {
     background: 0 50% / cover no-repeat url('/images/ourwork_h1.jpg');
     height: @bg-height;
@@ -14,4 +10,93 @@
 
 .icon-float {
     background: center / contain no-repeat url('/images/floatspa19_logo.png');
+}
+
+.ourwork-container .info-wrapper {
+    margin-bottom: 0;
+    padding-top: 48px;
+    .info-subheading {
+        color: @color-info-heading-text;
+        font-weight: 500;
+    }
+    .info-content:nth-child(1),
+    .info-content:nth-child(2) {
+        width: 50%;
+    }
+    .img-icon-wrapper {
+        padding: 24px;
+        text-align: center;
+        .img-icon {
+            width: 75%;
+            &.md {
+                width: 50%;
+            }
+        }
+    }
+    .btn-wrapper {
+        .btn {
+            margin: 40px 0 40px 0;
+        }
+    }
+}
+
+.ourwork-container .accordion-container {
+    .accordion-img-wrapper {
+        margin: 24px 0;
+    }
+    .accordion-img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .btn-wrapper {
+        text-align: center;
+    }
+}
+
+.pushImgSetImages(@index) when (@index>0) {
+    &:nth-child(@{index}) {
+        left: 6% * (@index - 1);
+        z-index: @index;
+    }
+    .pushImgSetImages(@index - 1);
+}
+
+.pushImgSetImages(0) {}
+
+.ourwork-container .img-set {
+    padding: 24px;
+    text-align: center;
+    .img-set-item {
+        width: 100%;
+    }
+}
+
+#accordion-ews .accordion-img.menu {
+    width: 75%;
+}
+
+@media(min-width: @screen-md) {
+    .ourwork-container .info-wrapper {
+        .btn-wrapper {
+            text-align: left;
+        }
+    }
+}
+
+@media(max-width: @screen-md) {
+    .ourwork-container .info-wrapper .info-content {
+        .info-subheading {
+            text-align: center;
+        }
+        .info-listitem {
+            padding: 24px;
+        }
+        .info-item-content {
+            width: 100%;
+        }
+    }
+    .ourwork-container .accordion-container .accordion-img {
+        width: 75%;
+    }
 }
