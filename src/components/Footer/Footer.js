@@ -49,7 +49,15 @@ class Footer extends Component {
                                                 {
                                                     section.subs.map(subitem => (
                                                         <li className='footer-section-listitem' key={subitem.name}>
-                                                            {subitem.name}
+                                                            {
+                                                                subitem.url !== undefined
+                                                                    ? (
+                                                                        <a className='footer-section-sublink' href={subitem.url}>
+                                                                            {subitem.name}
+                                                                        </a>
+                                                                    )
+                                                                    : subitem.name
+                                                            }
                                                         </li>
                                                     ))
                                                 }
