@@ -69,7 +69,7 @@
 
 .homepage-service {
     float: left;
-    width: 16.667%;
+    width: 20%;
     &:nth-child(1) {
         .homepage-service-icon-wrapper {
             background-color: #d2cbd8;
@@ -100,12 +100,14 @@
             background-color: #b7879a;
         }
     }
+    .homepage-service-padder {
+        padding: 8px;
+    }
     .homepage-service-icon-wrapper {
         display: table;
         width: 125px;
         height: 125px;
         border-radius: 125px;
-        margin: 0 auto;
         i {
             display: table-cell;
             vertical-align: middle;
@@ -124,13 +126,31 @@
             }
         }
     }
-    .homepage-service-detail {
-        font-size: 16px;
+    .homepage-service-title {
+        font-size: 24px;
         font-weight: 500;
         letter-spacing: -0.1px;
         color: @color-info-heading-text;
         margin-top: 26px;
-        text-align: center;
+        text-align: left;
+    }
+    .service-info {
+        color: #0a1622;
+        font-style: italic;
+        margin: 16px 0;
+        text-align: left;
+    }
+    .service-list-container {
+        text-align: left;
+        .service-list {
+            font-weight: 600;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .service-listitem {
+            margin: 8px 0;
+        }
     }
 }
 
