@@ -1,14 +1,6 @@
 {
     "links": [
         {
-            "name": "Services",
-            "url": "/services.html"
-        },
-        {
-            "name": "Process",
-            "url": "/process.html"
-        },
-        {
             "name": "Team",
             "url": "/team.html"
         },
