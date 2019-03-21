@@ -1,40 +1,4 @@
 {
-    "services": {
-        "name": "Services",
-        "url": "/services.html",
-        "subs": [
-            {
-                "name": "Web Design"
-            },
-            {
-                "name": "Responsive Design"
-            },
-            {
-                "name": "Application Design"
-            },
-            {
-                "name": "Social Media Marketing"
-            },
-            {
-                "name": "SEO Optimization"
-            },
-            {
-                "name": "Graphic Needs"
-            }
-        ]
-    },
-    "processes": {
-        "name": "Processes",
-        "url": "/process.html",
-        "subs": [
-            {
-                "name": "UX Design Process"
-            },
-            {
-                "name": "Development Process"
-            }
-        ]
-    },
     "Team": {
         "name": "Team",
         "url": "/team.html",
