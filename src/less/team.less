@@ -1,6 +1,14 @@
-.team-container .info-wrapper {
-    margin-bottom: 0px;
-    padding-bottom: 100px;
+.team-container {
+    .info-wrapper:nth-child(1) {
+        margin-bottom: 0px;
+        padding-bottom: 100px;
+    }
+    .info-wrapper:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .homepage-service {
+        height: auto;
+    }
 }
 
 .section-vision,
@@ -57,7 +65,7 @@
     .section-team .info-wrapper .info-content:nth-child(2) {
         width: 100%;
     }
-    .section-team .info-content > div {
+    .section-team .info-content>div {
         &:nth-child(1),
         &:nth-child(2) {
             text-align: center;
