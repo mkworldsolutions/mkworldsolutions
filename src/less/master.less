@@ -14,6 +14,10 @@ body {
     text-align: center
 }
 
+.bold {
+    font-weight: 600;
+}
+
 // globals
 @import 'variables';
 @import 'utils';
@@ -73,10 +77,11 @@ body {
         animation: intro 3s;
     }
     .intro-content {
+        animation: intro 3s;
         font-size: 20px;
         letter-spacing: -0.1px;
         margin-top: 24px;
-        animation: intro 3s;
+        padding: 16px;
     }
     .intro-actions {
         margin-top: 72px;
@@ -151,13 +156,80 @@ body {
     }
 }
 
-// test h1 enhancements
-.main-container {
-    background: linear-gradient(to bottom, #353b4e, #b5bbce);
+// v2 - style clean up
+.section {
+    padding: 80px 24px;
+    &.alt {
+        padding: 80px 0;
+    }
 }
 
-.content-container {
-    box-shadow: 0 0 2px 0 rgba(85, 85, 85, .7);
-    margin: 0 auto;
-    max-width: @screen-xxlg;
+.section-heading {
+    color: @color-heading-text;
+    font-size: 36px;
+    letter-spacing: -0.2px;
+    margin-bottom: 8px;
+    &.alt-heading {
+        color: @color-heading-alt-text;
+    }
+}
+
+.section-details {
+    margin-bottom: 16px;
+}
+
+.section-subheading {
+    color: @color-subheading-text;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 8px;
+    letter-spacing: -0.16px;
+}
+
+.section-list {
+    list-style: none;
+    margin: 16px 0 0 16px;
+    padding: 0;
+}
+
+.section-list-heading {
+    color: @color-subheading-text;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 8px;
+    letter-spacing: -0.16px;
+}
+
+.section-listitem {
+    padding: 8px 0;
+}
+
+.section-listitem-wrapper {
+    display: table;
+    width: 100%;
+}
+
+.section-listitem-icon {
+    display: table-cell;
+    height: 32px;
+    padding-right: 16px;
+    vertical-align: middle;
+    width: 30px;
+    svg {
+        height: 32px;
+    }
+}
+
+.section-listitem-details {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media(max-width: @screen-lg) {
+    .section-heading {
+        text-align: center;
+    }
+    .section-subheading {
+        text-align: center;
+    }
 }

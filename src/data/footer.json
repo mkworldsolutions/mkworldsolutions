@@ -1,49 +1,19 @@
 {
-    "services": {
-        "name": "Services",
-        "url": "/services.html",
-        "subs": [
-            {
-                "name": "Web Design"
-            },
-            {
-                "name": "Responsive Design"
-            },
-            {
-                "name": "Application Design"
-            },
-            {
-                "name": "Social Media Marketing"
-            },
-            {
-                "name": "SEO Optimization"
-            },
-            {
-                "name": "Graphic Needs"
-            }
-        ]
-    },
-    "processes": {
-        "name": "Processes",
-        "url": "/process.html",
-        "subs": [
-            {
-                "name": "UX Design Process"
-            },
-            {
-                "name": "Development Process"
-            }
-        ]
-    },
     "Team": {
         "name": "Team",
         "url": "/team.html",
         "subs": [
             {
-                "name": "Our Vision"
+                "name": "Beverly Kodos"
             },
             {
-                "name": "Our Team"
+                "name": "beverlykodos@mkworldsolutions.com"
+            },
+            {
+                "name": "Mario Lo"
+            },
+            {
+                "name": "mariolo@mkworldsolutions.com"
             }
         ]
     },
@@ -58,7 +28,7 @@
                 "name": "hello@mkworldsolutions.com"
             },
             {
-                "name": "Social Media"
+                "name": "Salt Lake City Utah"
             }
         ]
     },
