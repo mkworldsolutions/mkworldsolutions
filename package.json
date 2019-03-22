@@ -1,6 +1,6 @@
 {
   "name": "mkworldsolutions",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/mariolo1985/mkworldsolutions#readme",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "scroll-callback": "^0.3.1",
