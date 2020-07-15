@@ -11,6 +11,10 @@
         {
             "name": "Our Work",
             "url": "/ourwork.html"
+        },
+ {
+            "name": "Articles",
+            "url": "/blog"
         }
     ]
 }

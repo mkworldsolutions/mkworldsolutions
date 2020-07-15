@@ -1,0 +1,1 @@
+export CookiesToast from './CookiesToast'
