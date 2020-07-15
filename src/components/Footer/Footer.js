@@ -1,4 +1,5 @@
 import React from 'react';
+import { CookiesToast } from '..'
 
 const Footer = () => {
     const SvgLocation = () => (
@@ -218,7 +219,8 @@ const Footer = () => {
                 </div>
                 <div className='footer-subheading'>Salt Lake City, Utah</div>
             </div>
-        </div>
+            <CookiesToast />
+        </div>        
     );
 };
 
